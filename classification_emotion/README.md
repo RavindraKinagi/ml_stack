@@ -1,1 +1,10 @@
+Based on the provided code, it seems that the problem statement is to build a deep learning model using TensorFlow and Keras to classify emotions in text data.
+The code starts by importing the necessary libraries such as pandas, numpy, seaborn, and TensorFlow. The dataset is loaded from the "Emotion_final.csv" file into a pandas DataFrame. Some exploratory data analysis (EDA) is performed, including visualizing the distribution of emotions in the dataset.
+To address class imbalance, the code performs upsampling of the "surprise" and "love" classes using the resample function from scikit-learn. The dataset is concatenated with the upsampled samples, and the count plot is visualized again to show the balanced classes.
+The text data is preprocessed by tokenizing and padding the sequences using the Tokenizer and pad_sequences functions from Keras. The target variable is one-hot encoded using the OneHotEncoder from scikit-learn. The dataset is split into training, validation, and testing sets using the train_test_split function.
+A deep learning model is constructed using the Sequential API from Keras. The model architecture consists of an embedding layer, two bidirectional LSTM layers, global average pooling, dense layers, batch normalization, and dropout layers. The model is compiled with the Adam optimizer, and the loss function is set to categorical cross-entropy.
+The model is trained on the training data using the fit function, and validation data is used for monitoring the model's performance during training. A checkpoint is set up to save the best model based on validation accuracy.
+After training the model, evaluation is performed on the test set. The model's predictions are obtained using the predict function, and performance metrics such as accuracy, classification report, and confusion matrix are calculated and displayed.
+In summary, the problem is to build a deep learning model using TensorFlow and Keras to classify emotions in text data. The model is trained and evaluated on the provided dataset, and performance metrics are calculated to assess the model's accuracy and classification performance.
+
 
