@@ -1,1 +1,1 @@
-
+The problem statement for your project is to predict the type of attacks in an Internet of Things (IoT) environment based on various features. The dataset contains information about different attacks, and the goal is to train machine learning models to accurately classify and predict the type of attack based on the provided features. The models being used for classification include Decision Tree Classifier, Naive Bayes Classifier, KNN Classifier, and Random Forest Classification. The performance of each model is evaluated using accuracy rate and training time.
